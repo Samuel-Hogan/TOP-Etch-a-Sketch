@@ -1,5 +1,5 @@
 #container {
-    border: 5px solid black;
+    border: 3px solid black;
     height: 512px;
     width: 512px;
     display: flex;
@@ -11,4 +11,8 @@
     height: 30px;
     border: 1px solid blue;
     flex-shrink: 0;
+}
+
+.box:hover {
+    background-color: blue;
 }
