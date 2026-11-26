@@ -1,16 +1,17 @@
+* {
+    box-sizing: border-box;
+}
 #container {
-    border: 3px solid black;
-    height: 1000px;
-    width: 1000px;
+    border: 2px solid black;
+    height: 836px;
+    width: 836px;
     display: flex;
     justify-self: center;
     flex-wrap: wrap;
 }
 
 .box {
-    width: 60px;
     border: 1px solid blue;
-    flex: auto;
 }
 
 .box:hover {

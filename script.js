@@ -4,22 +4,26 @@ function grid() {
     for (let i = 0; i < 256; i++) {
         const box = document.createElement("div");
         box.classList.add("box");
+        box.style.width = "52px";
         container.appendChild(box);
     }
 }
 grid()
 
 function changeGrid() {
-    let number = prompt("Input a Number!", 64);
+    let number = prompt("Input a Number!", "1 - 100");
+    let size = 100 / number;
     if (!number) {
         
-    }else if (number >= 100) {
+    }else if (number > 100) {
         alert("Please input a number no more than 100!")
     }else {
         container.innerHTML = "";
         for (let i = 0; i < number * number; i++) {
             const box = document.createElement("div");
             box.classList.add("box");
+            box.style.flexBasis = `${size}%`;
+            box.style.aspectRatio = "1";
             container.appendChild(box);
         }
     }
